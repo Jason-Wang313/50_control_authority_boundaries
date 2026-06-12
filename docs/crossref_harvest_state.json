@@ -1,0 +1,53 @@
+{
+  "queries": [
+    {
+      "query": "shared autonomy",
+      "fetched": 99
+    },
+    {
+      "query": "control authority",
+      "fetched": 99
+    },
+    {
+      "query": "authority transfer robot",
+      "fetched": 96
+    },
+    {
+      "query": "teleoperation intent inference",
+      "fetched": 100
+    },
+    {
+      "query": "shared control robot manipulation",
+      "fetched": 96
+    },
+    {
+      "query": "assistive teleoperation robot",
+      "fetched": 95
+    },
+    {
+      "query": "robot arbitration human control",
+      "fetched": 89
+    },
+    {
+      "query": "authority allocation robot",
+      "fetched": 94
+    },
+    {
+      "query": "human-robot shared control",
+      "fetched": 64
+    },
+    {
+      "query": "collaborative control human robot",
+      "fetched": 90
+    },
+    {
+      "query": "physical human robot interaction autonomy",
+      "fetched": 90
+    },
+    {
+      "query": "robot assistance handover authority",
+      "fetched": 94
+    }
+  ],
+  "total": 1106
+}
