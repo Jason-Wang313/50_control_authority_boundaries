@@ -1,0 +1,272 @@
+[
+  {
+    "policy": "confidence",
+    "latency": 0.0,
+    "peak_force": 10.783999999999992,
+    "overshoot": 2.783999999999992,
+    "success": 1.0,
+    "switch_time": 0.5800000000000003,
+    "switched": 1.0
+  },
+  {
+    "policy": "time",
+    "latency": 0.0,
+    "peak_force": 1.8880000000000208,
+    "overshoot": 0.0,
+    "success": 1.0,
+    "switch_time": 0.5800000000000003,
+    "switched": 1.0
+  },
+  {
+    "policy": "boundary",
+    "latency": 0.0,
+    "peak_force": 0.0,
+    "overshoot": 0.0,
+    "success": 0.0,
+    "switch_time": -1,
+    "switched": 0.0
+  },
+  {
+    "policy": "confidence",
+    "latency": 0.02,
+    "peak_force": 10.783999999999992,
+    "overshoot": 2.783999999999992,
+    "success": 1.0,
+    "switch_time": 0.5800000000000003,
+    "switched": 1.0
+  },
+  {
+    "policy": "time",
+    "latency": 0.02,
+    "peak_force": 1.8880000000000208,
+    "overshoot": 0.0,
+    "success": 1.0,
+    "switch_time": 0.5800000000000003,
+    "switched": 1.0
+  },
+  {
+    "policy": "boundary",
+    "latency": 0.02,
+    "peak_force": 0.0,
+    "overshoot": 0.0,
+    "success": 0.0,
+    "switch_time": -1,
+    "switched": 0.0
+  },
+  {
+    "policy": "confidence",
+    "latency": 0.04,
+    "peak_force": 10.783999999999992,
+    "overshoot": 2.783999999999992,
+    "success": 1.0,
+    "switch_time": 0.5800000000000003,
+    "switched": 1.0
+  },
+  {
+    "policy": "time",
+    "latency": 0.04,
+    "peak_force": 1.8880000000000208,
+    "overshoot": 0.0,
+    "success": 1.0,
+    "switch_time": 0.5800000000000003,
+    "switched": 1.0
+  },
+  {
+    "policy": "boundary",
+    "latency": 0.04,
+    "peak_force": 0.0,
+    "overshoot": 0.0,
+    "success": 0.0,
+    "switch_time": -1,
+    "switched": 0.0
+  },
+  {
+    "policy": "confidence",
+    "latency": 0.06,
+    "peak_force": 10.783999999999992,
+    "overshoot": 2.783999999999992,
+    "success": 1.0,
+    "switch_time": 0.5800000000000003,
+    "switched": 1.0
+  },
+  {
+    "policy": "time",
+    "latency": 0.06,
+    "peak_force": 1.8880000000000208,
+    "overshoot": 0.0,
+    "success": 1.0,
+    "switch_time": 0.5800000000000003,
+    "switched": 1.0
+  },
+  {
+    "policy": "boundary",
+    "latency": 0.06,
+    "peak_force": 0.0,
+    "overshoot": 0.0,
+    "success": 0.0,
+    "switch_time": -1,
+    "switched": 0.0
+  },
+  {
+    "policy": "confidence",
+    "latency": 0.08,
+    "peak_force": 10.783999999999992,
+    "overshoot": 2.783999999999992,
+    "success": 1.0,
+    "switch_time": 0.5800000000000003,
+    "switched": 1.0
+  },
+  {
+    "policy": "time",
+    "latency": 0.08,
+    "peak_force": 1.8880000000000208,
+    "overshoot": 0.0,
+    "success": 1.0,
+    "switch_time": 0.5800000000000003,
+    "switched": 1.0
+  },
+  {
+    "policy": "boundary",
+    "latency": 0.08,
+    "peak_force": 0.0,
+    "overshoot": 0.0,
+    "success": 0.0,
+    "switch_time": -1,
+    "switched": 0.0
+  },
+  {
+    "policy": "confidence",
+    "latency": 0.1,
+    "peak_force": 10.783999999999992,
+    "overshoot": 2.783999999999992,
+    "success": 1.0,
+    "switch_time": 0.5800000000000003,
+    "switched": 1.0
+  },
+  {
+    "policy": "time",
+    "latency": 0.1,
+    "peak_force": 1.8880000000000208,
+    "overshoot": 0.0,
+    "success": 1.0,
+    "switch_time": 0.5800000000000003,
+    "switched": 1.0
+  },
+  {
+    "policy": "boundary",
+    "latency": 0.1,
+    "peak_force": 0.0,
+    "overshoot": 0.0,
+    "success": 0.0,
+    "switch_time": -1,
+    "switched": 0.0
+  },
+  {
+    "policy": "confidence",
+    "latency": 0.12,
+    "peak_force": 10.783999999999992,
+    "overshoot": 2.783999999999992,
+    "success": 1.0,
+    "switch_time": 0.5800000000000003,
+    "switched": 1.0
+  },
+  {
+    "policy": "time",
+    "latency": 0.12,
+    "peak_force": 1.8880000000000208,
+    "overshoot": 0.0,
+    "success": 1.0,
+    "switch_time": 0.5800000000000003,
+    "switched": 1.0
+  },
+  {
+    "policy": "boundary",
+    "latency": 0.12,
+    "peak_force": 10.783999999999992,
+    "overshoot": 2.783999999999992,
+    "success": 1.0,
+    "switch_time": 0.5800000000000003,
+    "switched": 1.0
+  },
+  {
+    "policy": "confidence",
+    "latency": 0.14,
+    "peak_force": 10.783999999999992,
+    "overshoot": 2.783999999999992,
+    "success": 1.0,
+    "switch_time": 0.5800000000000003,
+    "switched": 1.0
+  },
+  {
+    "policy": "time",
+    "latency": 0.14,
+    "peak_force": 1.8880000000000208,
+    "overshoot": 0.0,
+    "success": 1.0,
+    "switch_time": 0.5800000000000003,
+    "switched": 1.0
+  },
+  {
+    "policy": "boundary",
+    "latency": 0.14,
+    "peak_force": 10.783999999999992,
+    "overshoot": 2.783999999999992,
+    "success": 1.0,
+    "switch_time": 0.5800000000000003,
+    "switched": 1.0
+  },
+  {
+    "policy": "confidence",
+    "latency": 0.16,
+    "peak_force": 10.783999999999992,
+    "overshoot": 2.783999999999992,
+    "success": 1.0,
+    "switch_time": 0.5800000000000003,
+    "switched": 1.0
+  },
+  {
+    "policy": "time",
+    "latency": 0.16,
+    "peak_force": 1.8880000000000208,
+    "overshoot": 0.0,
+    "success": 1.0,
+    "switch_time": 0.5800000000000003,
+    "switched": 1.0
+  },
+  {
+    "policy": "boundary",
+    "latency": 0.16,
+    "peak_force": 10.783999999999992,
+    "overshoot": 2.783999999999992,
+    "success": 1.0,
+    "switch_time": 0.5800000000000003,
+    "switched": 1.0
+  },
+  {
+    "policy": "confidence",
+    "latency": 0.18,
+    "peak_force": 10.783999999999992,
+    "overshoot": 2.783999999999992,
+    "success": 1.0,
+    "switch_time": 0.5800000000000003,
+    "switched": 1.0
+  },
+  {
+    "policy": "time",
+    "latency": 0.18,
+    "peak_force": 1.8880000000000208,
+    "overshoot": 0.0,
+    "success": 1.0,
+    "switch_time": 0.5800000000000003,
+    "switched": 1.0
+  },
+  {
+    "policy": "boundary",
+    "latency": 0.18,
+    "peak_force": 10.783999999999992,
+    "overshoot": 2.783999999999992,
+    "success": 1.0,
+    "switch_time": 0.5800000000000003,
+    "switched": 1.0
+  }
+]

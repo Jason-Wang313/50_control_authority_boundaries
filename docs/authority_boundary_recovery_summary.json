@@ -1,0 +1,43 @@
+{
+  "n": 600,
+  "families": {
+    "free_space_alignment": 100,
+    "cluttered_approach": 100,
+    "contact_insertion": 100,
+    "human_handover": 100,
+    "slip_recovery": 100,
+    "shared_guidance": 100
+  },
+  "methods": {
+    "confidence_switch": {
+      "success_rate": 0.5616666666666666,
+      "unsafe_rate": 0.6233333333333333,
+      "mean_peak_force": 4.513567333333333,
+      "max_peak_force": 10.124,
+      "chatter_rate": 0.2733333333333333,
+      "success": 337,
+      "unsafe": 187,
+      "safety_cases": 300
+    },
+    "timer_switch": {
+      "success_rate": 0.735,
+      "unsafe_rate": 0.11,
+      "mean_peak_force": 2.9026306666666684,
+      "max_peak_force": 10.012,
+      "chatter_rate": 0.2733333333333333,
+      "success": 441,
+      "unsafe": 33,
+      "safety_cases": 300
+    },
+    "authority_boundary": {
+      "success_rate": 0.8883333333333333,
+      "unsafe_rate": 0.0,
+      "mean_peak_force": 2.0094330000000014,
+      "max_peak_force": 3.2056,
+      "chatter_rate": 0.0,
+      "success": 533,
+      "unsafe": 0,
+      "safety_cases": 300
+    }
+  }
+}

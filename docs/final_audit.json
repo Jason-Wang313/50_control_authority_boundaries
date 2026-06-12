@@ -1,0 +1,21 @@
+{
+  "same_mode_residual": 0.0,
+  "mode_switch_counterexample": 25.93,
+  "summary": {
+    "confidence": {
+      "max_peak": 10.783999999999992,
+      "mean_peak": 10.783999999999992,
+      "success_rate": 1.0
+    },
+    "time": {
+      "max_peak": 1.8880000000000208,
+      "mean_peak": 1.8880000000000208,
+      "success_rate": 1.0
+    },
+    "boundary": {
+      "max_peak": 10.783999999999992,
+      "mean_peak": 4.3135999999999965,
+      "success_rate": 0.4
+    }
+  }
+}
