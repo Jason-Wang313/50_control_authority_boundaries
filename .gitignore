@@ -1,4 +1,5 @@
-﻿__pycache__/
+__pycache__/
+paper/main.pdf
 *.aux
 *.bbl
 *.blg
@@ -15,4 +16,5 @@ results/*raw*.json
 results/*raw*.jsonl
 results/*cache*.json
 results/*cache*.jsonl
+data/build_status.json
 *.tmp
