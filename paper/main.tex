@@ -14,7 +14,7 @@
 \maketitle
 
 \begin{abstract}
-Shared-autonomy systems often decide whether a human or robot should control the next action from intent confidence, elapsed time, or a fixed arbitration score. These proxies hide the physical condition that actually matters: authority should change when the current interaction state crosses a boundary where one controller can no longer keep the task safe and effective. We propose control authority boundaries, a mechanism that treats ceding and reclaiming authority as boundary inference in physical context space. The recovery sweep for this paper produced 1106 related-work rows, including 300 serious-skim rows, 220 deep-read rows, and 100 hostile-prior rows. On 600 synthetic shared-control cases, a confidence switch reaches 0.562 success with 0.623 unsafe ceded-control rate, a timer switch reaches 0.735 and 0.110, and the boundary policy reaches 0.888 and 0.000 while reducing mean peak force to 2.009. The paper is a diagnostic mechanism and not a real-robot safety claim.
+Shared-autonomy systems often decide whether a human or robot should control the next action from intent confidence, elapsed time, or a fixed arbitration score. These proxies hide the physical condition that actually matters: authority should change when the current interaction state crosses a boundary where one controller can no longer keep the task safe and effective. We propose control authority boundaries, a mechanism that treats ceding and reclaiming authority as boundary inference in physical context space. On 600 synthetic shared-control cases, the original hand-coded boundary policy reaches 0.888 success with 0.000 unsafe ceded-control rate, compared with 0.562/0.623 for confidence switching and 0.735/0.110 for timer switching. V2 hardening adds tuned threshold baselines: on a 204-case holdout split, a quality/risk rule reaches 0.985 success with 0.010 unsafe rate, and a phase+quality/risk rule reaches 1.000 and 0.000. The paper is therefore a diagnostic mechanism and feature-boundary argument, not an algorithmic superiority or real-robot safety claim.
 \end{abstract}
 
 \section{Motivation}
@@ -41,6 +41,9 @@ Boundary inference instead asks whether authority transfer is permitted in the c
 \]
 When $b(x_t)=1$, ceding authority is physically admissible. When $b(x_t)=0$, the robot should reclaim or preserve shared control even if intent confidence is high. This makes the hidden assumption testable: confidence should not be monotone with authority unless the physical boundary is also satisfied.
 
+\paragraph{V2 hardening note.}
+Submission-hardening version: v2. Decision: workshop-only. The authority-boundary framing survives as a useful diagnostic, but the fixed boundary instance does not survive as an algorithmic novelty claim. Threshold baselines tuned on 396 training cases beat the hand-coded boundary on a 204-case holdout split, so the supported contribution is the need to expose physical authority features and phase conditions.
+
 \section{Diagnostic Benchmark}
 
 We generated 600 synthetic shared-control cases across free-space alignment, cluttered approach, contact insertion, handover, slip recovery, and shared guidance. Each case records intent confidence, user input quality, force margin, force risk, error trend, latency, the correct cede/reclaim label, and whether the state is safety-critical. We compare three policies: confidence switching, timer switching, and authority-boundary switching.
@@ -60,6 +63,14 @@ Authority boundary & 0.888 & 0.000 & 2.009 & 0.000 \\
 \label{tab:diagnostic}
 \end{table}
 
+\begin{table}[t]
+\centering
+\small
+\input{v2_tuned_threshold_table.tex}
+\caption{V2 tuned-threshold hardening. Thresholds are selected on 396 training cases and evaluated on a disjoint 204-case holdout split. Unsafe is unsafe ceding rate over safety-critical cases.}
+\label{tab:v2-thresholds}
+\end{table}
+
 \begin{figure}[t]
 \centering
 \IfFileExists{figures/authority_boundary_recovery_metrics.png}{\includegraphics[width=0.82\linewidth]{figures/authority_boundary_recovery_metrics.png}}{\fbox{\parbox{0.78\linewidth}{Metric figure unavailable.}}}
@@ -67,15 +78,17 @@ Authority boundary & 0.888 & 0.000 & 2.009 & 0.000 \\
 \label{fig:metrics}
 \end{figure}
 
-Table~\ref{tab:diagnostic} and Figure~\ref{fig:metrics} show why the boundary matters. Confidence switching cedes control whenever inferred user intent is high, including contact states where the safer action is to retain robot authority. Timer switching reduces some force peaks, but it encodes a schedule rather than the physical reason for transfer. The boundary policy couples intent to force margin and error trend, so ceding requires both user intent and physical admissibility.
+Table~\ref{tab:diagnostic} and Figure~\ref{fig:metrics} show why the boundary matters relative to the original score and timer baselines. Confidence switching cedes control whenever inferred user intent is high, including contact states where the safer action is to retain robot authority. Timer switching reduces some force peaks, but it encodes a schedule rather than the physical reason for transfer. The boundary policy couples intent to force margin and error trend, so ceding requires both user intent and physical admissibility.
+
+Table~\ref{tab:v2-thresholds} is the more hostile comparison. Once thresholds are tuned on the same synthetic data family, simple physical rules beat the hand-coded boundary. The tuned quality/risk rule reaches 0.985 holdout success with one unsafe cede among 102 safety-critical holdout cases, and the tuned phase+quality/risk rule reaches 1.000 holdout success with 0.000 unsafe ceding. This result narrows the claim: the diagnostic supports exposing authority-relevant phase, quality, and risk variables, but it does not show that the proposed fixed boundary rule is the best switching policy.
 
 \section{Limitations}
 
-The diagnostic is synthetic. It does not validate safety on real hardware, does not model every human adaptation strategy, and does not prove that the chosen boundary features are universal. Its value is falsifiability: if a proposed shared-autonomy system cannot say what physical boundary authorizes authority transfer, it is likely relying on a hidden proxy.
+The diagnostic is synthetic. It does not validate safety on real hardware, does not model every human adaptation strategy, and does not prove that the chosen boundary features are universal. The v2 tuned-threshold baseline also shows that the current experiment is too close to its own data-generating rule: a phase+quality/risk threshold rule recovers the labels perfectly on holdout. Its value is therefore falsifiability and auditing, not a new optimal arbitration algorithm.
 
 \section{Conclusion}
 
-Control authority should be treated as a physical boundary condition, not only as confidence arbitration. Shared-autonomy policies become easier to test when ceding and reclaiming control are tied to explicit state boundaries.
+Control authority should be treated as a physical boundary condition, not only as confidence arbitration. Shared-autonomy policies become easier to test when ceding and reclaiming control are tied to explicit state boundaries, but future evidence must compare learned and tuned boundary rules on real interaction traces before claiming policy superiority.
 
 \begin{thebibliography}{9}
 \bibitem[Dragan and Srinivasa(2013)]{dragan2013}

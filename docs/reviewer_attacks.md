@@ -1,16 +1,25 @@
 # Reviewer Attacks
 
-1. This is just another switching heuristic with a new name.
-2. The boundary is hand-crafted, so the contribution is not principled.
-3. The synthetic simulation does not prove usefulness on real robots.
-4. Intent estimation already handles context, so the paper is incremental.
-5. The hysteresis band is just a standard anti-chatter trick.
-6. The method may not generalize across tasks or robot morphologies.
-7. The paper does not separate authority transfer from low-level control stability.
-8. The comparison against tuned baselines may be unfair if not carefully tuned.
+## 1. This is just another threshold switching heuristic.
 
-## Preemptive responses
-- Show explicit failure cases where confidence is high but authority should still stay with the human, and where confidence is low but the robot should temporarily reclaim authority.
-- Include a baseline suite with threshold sweeps, hysteresis sweeps, and context-ignorant policies.
-- Make clear that the central object is the authority boundary, not the low-level controller.
-- Be honest that the current evidence is synthetic and therefore suggest real-robot follow-up rather than overclaiming deployment readiness.
+Response: Sustained. V2 tuning shows a phase+quality/risk threshold rule reaches 1.000 holdout success and 0.000 unsafe ceding, beating the fixed authority-boundary rule's 0.882 holdout success.
+
+## 2. The synthetic labels bake in the proposed mechanism.
+
+Response: Sustained. The true cede labels are recoverable from task phase, human input quality, and force risk. This is useful for a diagnostic toy, but not enough for an algorithmic contribution.
+
+## 3. Confidence and timer baselines are too weak.
+
+Response: Sustained. The original confidence and timer baselines remain useful failure cases, but the v2 tuned threshold baselines are the real comparison.
+
+## 4. The paper does not validate real shared autonomy.
+
+Response: Sustained. The paper must stay workshop-only until real interaction traces or high-fidelity simulation are added.
+
+## 5. Boundary inference is not clearly distinct from contextual arbitration.
+
+Response: Partly sustained. The supported distinction is an auditing requirement: name the physical variables and compare against tuned rules. The current evidence does not prove a new policy class.
+
+## Decision Impact
+
+Workshop-only. The paper can be honest as a mechanism/diagnostic note, but the fixed boundary rule cannot be sold as a superior algorithm.

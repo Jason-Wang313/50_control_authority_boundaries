@@ -1,26 +1,15 @@
 # Novelty Decision
 
-## Chosen thesis
-Control authority in shared autonomy should be transferred by inferring a physical-context boundary in the interaction state space, rather than by using only intent confidence, time, or safety risk.
+Decision after v2 hardening: workshop-only.
 
-## Why this wins
-- It changes the central mechanism from arbitration score to boundary inference.
-- It explains both ceding and reclaiming authority.
-- It can be tested on phase changes, contact changes, and latency changes.
-- It creates a cleaner hostile comparison against switching-time and intent-inference baselines.
+Reason: The physical authority-boundary framing is useful, but the current experiment does not establish a novel or superior switching algorithm. A tuned phase+quality/risk threshold baseline recovers the synthetic labels perfectly on the holdout split.
 
-## What the paper is not
-- not a larger model
-- not a new benchmark by itself
-- not a generic uncertainty estimate
-- not a pure LLM planner
-- not RL for its own sake
+## Surviving Contribution
 
-## Paper form
-Best fit appears to be a concept + mechanism + synthetic evidence paper:
-- formalize the authority boundary
-- show hidden assumptions in prior work
-- demonstrate on a runnable simulation that context-aware boundaries outperform confidence-only switching under phase changes and delay
+- Treat authority transfer as a physical boundary audit, not just an intent-confidence score.
+- Show why confidence-only and timer-only baselines fail in contact/safety-critical phases.
+- Require future shared-autonomy systems to report the physical variables that authorize ceding and reclaiming control.
 
-## Risk
-If the experiments only show a small gain over tuned thresholds, the contribution collapses to a heuristic. The evidence therefore needs adversarial baselines and failure cases, not just average performance.
+## Novelty Boundary
+
+The paper is novel only as a framing and diagnostic. It is not yet novel as a learned boundary estimator, a control-theoretic safety layer, or a real-robot shared-autonomy result.
