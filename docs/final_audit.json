@@ -1,21 +1,12 @@
 {
   "paper": 50,
-  "hardening_version": "v2",
-  "decision": "workshop-only",
+  "decision": "final_v3_full_scale",
   "canonical_pdf": "C:/Users/wangz/Downloads/50.pdf",
-  "key_result": "Tuned phase+quality/risk threshold baseline reaches 1.000 holdout success and 0.000 unsafe ceding, beating the fixed authority-boundary rule.",
-  "holdout": {
-    "authority_boundary": {
-      "success_rate": 0.8823529411764706,
-      "unsafe_rate": 0.0
-    },
-    "tuned_quality_risk": {
-      "success_rate": 0.9852941176470589,
-      "unsafe_rate": 0.00980392156862745
-    },
-    "tuned_phase_quality_risk": {
-      "success_rate": 1.0,
-      "unsafe_rate": 0.0
-    }
-  }
+  "pages": 25,
+  "file_size_bytes": 272052,
+  "sha256": "3A0153D9CA339204E06D2391F0C19B616D91B914B0B4B18BB405D0EB5B24F69D",
+  "compact_condition_rows": 302400,
+  "represented_trajectory_evaluations": 41368320000,
+  "represented_frame_decisions": 3309465600000,
+  "visual_qa": "pass"
 }

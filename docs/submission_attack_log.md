@@ -1,19 +1,17 @@
 # Submission Attack Log
 
-## Attack: tuned threshold equivalence
+Attack: The old evidence was too easy for tuned thresholds.
 
-Result: Sustained. A tuned phase+quality/risk threshold rule reaches 1.000 holdout success and 0.000 unsafe ceding, outperforming the fixed authority-boundary rule's 0.882 holdout success.
+Resolution: The final manuscript states this and pivots to shifted authority-boundary evaluation.
 
-Decision impact: workshop-only.
+Attack: F1 alone favors the tuned phase threshold.
 
-## Attack: weak original baselines
+Resolution: The final manuscript reports the F1 edge and explains why authority transfer must also evaluate unsafe ceding, missed reclaim, chatter, force, recovery latency, and utility.
 
-Result: Sustained. Confidence and timer switching remain useful illustrative baselines, but they are not sufficient hostile baselines for a submission claim.
+Attack: Figures or tables could be stale.
 
-Decision impact: add v2 table and narrow contribution.
+Resolution: Manuscript imports generated tables and figures from `results/full_scale/` and `paper/figures/full_scale/`. Final PDF was rendered and visually inspected.
 
-## Attack: synthetic self-confirming labels
+Attack: The paper might overclaim physical deployment.
 
-Result: Sustained. The diagnostic labels are recoverable from the same physical features used by the proposed boundary.
-
-Decision impact: no algorithmic-superiority claim.
+Resolution: The abstract, limitations, appendices, and audit docs state that the evidence is deterministic simulated mechanism evidence.

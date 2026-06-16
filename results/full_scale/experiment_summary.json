@@ -1,0 +1,97 @@
+{
+  "paper": 50,
+  "condition_rows": 302400,
+  "policy_summary": [
+    {
+      "policy": "conf",
+      "success": "0.665813",
+      "unsafe_cede": "0.194527",
+      "reclaim_miss": "0.189293",
+      "needless_intervene": "0.045698",
+      "chatter": "0.234298",
+      "peak_force": "3.222861",
+      "recovery_latency": "0.923192",
+      "boundary_f1": "0.441831",
+      "utility": "0.126669",
+      "weight": "43200"
+    },
+    {
+      "policy": "timer",
+      "success": "0.741980",
+      "unsafe_cede": "0.122591",
+      "reclaim_miss": "0.118301",
+      "needless_intervene": "0.064049",
+      "chatter": "0.269253",
+      "peak_force": "2.650394",
+      "recovery_latency": "0.807988",
+      "boundary_f1": "0.593106",
+      "utility": "0.297658",
+      "weight": "43200"
+    },
+    {
+      "policy": "tqr",
+      "success": "0.789137",
+      "unsafe_cede": "0.091162",
+      "reclaim_miss": "0.088669",
+      "needless_intervene": "0.068322",
+      "chatter": "0.160267",
+      "peak_force": "2.404716",
+      "recovery_latency": "0.689802",
+      "boundary_f1": "0.646831",
+      "utility": "0.421866",
+      "weight": "43200"
+    },
+    {
+      "policy": "tpqr",
+      "success": "0.851541",
+      "unsafe_cede": "0.040707",
+      "reclaim_miss": "0.038525",
+      "needless_intervene": "0.078612",
+      "chatter": "0.110343",
+      "peak_force": "2.002075",
+      "recovery_latency": "0.566874",
+      "boundary_f1": "0.717039",
+      "utility": "0.578496",
+      "weight": "43200"
+    },
+    {
+      "policy": "scalar",
+      "success": "0.746919",
+      "unsafe_cede": "0.121149",
+      "reclaim_miss": "0.117456",
+      "needless_intervene": "0.055456",
+      "chatter": "0.255874",
+      "peak_force": "2.640770",
+      "recovery_latency": "0.798517",
+      "boundary_f1": "0.598720",
+      "utility": "0.310276",
+      "weight": "43200"
+    },
+    {
+      "policy": "field",
+      "success": "0.890636",
+      "unsafe_cede": "0.020202",
+      "reclaim_miss": "0.021669",
+      "needless_intervene": "0.051128",
+      "chatter": "0.018416",
+      "peak_force": "1.849709",
+      "recovery_latency": "0.481201",
+      "boundary_f1": "0.711176",
+      "utility": "0.679714",
+      "weight": "43200"
+    },
+    {
+      "policy": "oracle",
+      "success": "0.915424",
+      "unsafe_cede": "0.009638",
+      "reclaim_miss": "0.008965",
+      "needless_intervene": "0.007877",
+      "chatter": "0.010404",
+      "peak_force": "1.758351",
+      "recovery_latency": "0.454074",
+      "boundary_f1": "0.711930",
+      "utility": "0.737891",
+      "weight": "43200"
+    }
+  ]
+}

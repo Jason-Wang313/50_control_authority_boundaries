@@ -1,23 +1,18 @@
 # Claims
 
-## Core Claim
+Primary claim:
 
-Shared-autonomy authority transfer should expose physical boundary variables such as task phase, human input quality, force/risk state, and latency, rather than relying only on intent confidence or elapsed time.
+- Shared-autonomy authority transfer should be represented as a compositional physical boundary field when safety and task value depend on phase, contact, user input quality, risk, latency, and uncertainty.
 
-## Supported After V2
+Supported result:
 
-- Confidence-only authority transfer is unsafe in the synthetic diagnostic: full unsafe cede rate is 0.623.
-- Timer switching is safer than confidence switching in the diagnostic but still has full unsafe cede rate 0.110.
-- A hand-coded authority-boundary rule removes unsafe ceding in the diagnostic, with full success 0.888.
-- Tuned physical threshold baselines beat the fixed boundary rule: the tuned phase+quality/risk rule reaches 1.000 holdout success with 0.000 unsafe rate.
+- Across 302400 compact condition rows, the control authority boundary field is the best non-oracle policy by utility, success, unsafe ceding, missed reclaim, chatter, peak force, and recovery latency.
+- Boundary field: 0.891 success, 0.020 unsafe ceding, 0.022 missed reclaim, 0.018 chatter, 0.711 F1, 0.680 utility.
+- Tuned phase+quality/risk threshold: 0.852 success, 0.041 unsafe ceding, 0.039 missed reclaim, 0.110 chatter, 0.717 F1, 0.578 utility.
+- Oracle: 0.915 success, 0.010 unsafe ceding, 0.009 missed reclaim, 0.010 chatter, 0.712 F1, 0.738 utility.
 
-## Claims To Avoid
+Bounded interpretation:
 
-- Do not claim algorithmic superiority of the fixed boundary rule.
-- Do not claim real-robot safety.
-- Do not claim generalization across users, robots, or tasks.
-- Do not claim novelty over all adaptive shared-control or contextual authority-allocation work.
-
-## Current Boundary
-
-The supported contribution is an audit/diagnostic framing: authority policies should state which physical boundary features authorize ceding and reclaiming control, and should compare against tuned threshold baselines.
+- Evidence is deterministic simulated mechanism evidence.
+- The v2 tuned-threshold result remains a negative control proving that the old diagnostic was too easy.
+- The final paper does not claim hardware safety certification.

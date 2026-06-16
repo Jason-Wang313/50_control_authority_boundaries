@@ -1,5 +1,17 @@
 # Hostile Reviewer Response
 
-The strongest criticism is correct: the current synthetic experiment does not prove that the proposed fixed authority-boundary rule is a superior switching algorithm. A tuned phase+quality/risk threshold rule recovers the holdout labels perfectly.
+Reviewer attack: A tuned threshold already solved the old diagnostic.
 
-The revised paper therefore makes a narrower claim. It argues that shared-autonomy authority policies should expose physical boundary variables and compare against tuned contextual thresholds. The current evidence is suitable for a workshop diagnostic note, not a full conference submission or safety claim.
+Response: Correct. The final paper includes that result as a negative control and changes the claim. V3 evaluates shifted authority boundaries across users, robots, contact dynamics, sensing regimes, and shift regimes.
+
+Reviewer attack: The tuned phase threshold has slightly higher F1.
+
+Response: Also correct. The manuscript reports it. The boundary field wins on utility, success, unsafe ceding, missed reclaim, chatter, peak force, and recovery latency. Authority transfer is a control problem, not only a classifier.
+
+Reviewer attack: The evidence is synthetic.
+
+Response: Correct. The final claim is deterministic mechanism evidence, not hardware validation. The hardware translation plan is included as future work.
+
+Reviewer attack: The field coefficients are hand-designed.
+
+Response: The paper does not claim these coefficients are deployable. The contribution is the boundary-field representation and shift benchmark.

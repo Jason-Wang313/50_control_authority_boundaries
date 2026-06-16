@@ -1,0 +1,379 @@
+{
+  "scenarios": [
+    {
+      "code": "free",
+      "label": "Free-space alignment",
+      "phase_cede": 0.88,
+      "contact": 0.05,
+      "risk": 0.16,
+      "human_fit": 0.84,
+      "complexity": 0.18
+    },
+    {
+      "code": "clutter",
+      "label": "Cluttered approach",
+      "phase_cede": 0.36,
+      "contact": 0.45,
+      "risk": 0.68,
+      "human_fit": 0.42,
+      "complexity": 0.62
+    },
+    {
+      "code": "insert",
+      "label": "Contact insertion",
+      "phase_cede": 0.22,
+      "contact": 0.82,
+      "risk": 0.78,
+      "human_fit": 0.36,
+      "complexity": 0.74
+    },
+    {
+      "code": "handover",
+      "label": "Human handover",
+      "phase_cede": 0.78,
+      "contact": 0.28,
+      "risk": 0.34,
+      "human_fit": 0.76,
+      "complexity": 0.4
+    },
+    {
+      "code": "slip",
+      "label": "Slip recovery",
+      "phase_cede": 0.18,
+      "contact": 0.88,
+      "risk": 0.86,
+      "human_fit": 0.3,
+      "complexity": 0.78
+    },
+    {
+      "code": "guide",
+      "label": "Shared guidance",
+      "phase_cede": 0.66,
+      "contact": 0.34,
+      "risk": 0.42,
+      "human_fit": 0.7,
+      "complexity": 0.48
+    },
+    {
+      "code": "occhand",
+      "label": "Occluded handoff",
+      "phase_cede": 0.48,
+      "contact": 0.46,
+      "risk": 0.58,
+      "human_fit": 0.62,
+      "complexity": 0.66
+    },
+    {
+      "code": "transport",
+      "label": "Cooperative transport",
+      "phase_cede": 0.54,
+      "contact": 0.6,
+      "risk": 0.62,
+      "human_fit": 0.58,
+      "complexity": 0.7
+    },
+    {
+      "code": "dock",
+      "label": "Mobile-base docking",
+      "phase_cede": 0.3,
+      "contact": 0.72,
+      "risk": 0.74,
+      "human_fit": 0.44,
+      "complexity": 0.72
+    },
+    {
+      "code": "tool",
+      "label": "Tool exchange",
+      "phase_cede": 0.58,
+      "contact": 0.52,
+      "risk": 0.56,
+      "human_fit": 0.64,
+      "complexity": 0.58
+    },
+    {
+      "code": "peg",
+      "label": "Constrained peg-in-hole",
+      "phase_cede": 0.2,
+      "contact": 0.9,
+      "risk": 0.82,
+      "human_fit": 0.34,
+      "complexity": 0.82
+    },
+    {
+      "code": "inspect",
+      "label": "Remote inspection",
+      "phase_cede": 0.82,
+      "contact": 0.12,
+      "risk": 0.24,
+      "human_fit": 0.78,
+      "complexity": 0.3
+    }
+  ],
+  "robots": [
+    {
+      "code": "assist",
+      "label": "Assistive arm",
+      "autonomy": 0.64,
+      "force": 0.7,
+      "precision": 0.62,
+      "latency": 0.1,
+      "intrusion_cost": 0.36
+    },
+    {
+      "code": "mobile",
+      "label": "Mobile manipulator",
+      "autonomy": 0.72,
+      "force": 0.54,
+      "precision": 0.5,
+      "latency": 0.18,
+      "intrusion_cost": 0.42
+    },
+    {
+      "code": "surg",
+      "label": "Surgical teleoperation arm",
+      "autonomy": 0.58,
+      "force": 0.82,
+      "precision": 0.86,
+      "latency": 0.08,
+      "intrusion_cost": 0.68
+    },
+    {
+      "code": "cobot",
+      "label": "Warehouse cobot",
+      "autonomy": 0.76,
+      "force": 0.66,
+      "precision": 0.6,
+      "latency": 0.12,
+      "intrusion_cost": 0.46
+    },
+    {
+      "code": "exo",
+      "label": "Powered exoskeleton",
+      "autonomy": 0.52,
+      "force": 0.58,
+      "precision": 0.56,
+      "latency": 0.16,
+      "intrusion_cost": 0.76
+    }
+  ],
+  "users": [
+    {
+      "code": "expert",
+      "label": "Expert steady",
+      "quality": 0.88,
+      "intent": 0.84,
+      "overtrust": 0.12,
+      "tremor": 0.05,
+      "adapt": 0.8
+    },
+    {
+      "code": "novice",
+      "label": "Novice exploratory",
+      "quality": 0.58,
+      "intent": 0.64,
+      "overtrust": 0.28,
+      "tremor": 0.16,
+      "adapt": 0.54
+    },
+    {
+      "code": "fatigue",
+      "label": "Fatigued operator",
+      "quality": 0.5,
+      "intent": 0.68,
+      "overtrust": 0.22,
+      "tremor": 0.22,
+      "adapt": 0.42
+    },
+    {
+      "code": "tremor",
+      "label": "Tremor/noisy input",
+      "quality": 0.46,
+      "intent": 0.58,
+      "overtrust": 0.18,
+      "tremor": 0.36,
+      "adapt": 0.48
+    },
+    {
+      "code": "delayint",
+      "label": "Delayed intent expression",
+      "quality": 0.62,
+      "intent": 0.48,
+      "overtrust": 0.18,
+      "tremor": 0.12,
+      "adapt": 0.56
+    },
+    {
+      "code": "overconf",
+      "label": "Overconfident operator",
+      "quality": 0.56,
+      "intent": 0.8,
+      "overtrust": 0.48,
+      "tremor": 0.14,
+      "adapt": 0.44
+    }
+  ],
+  "risks": [
+    {
+      "code": "open",
+      "label": "Open workspace",
+      "hazard": 0.12,
+      "margin": 0.82,
+      "intervene": 0.26,
+      "uncertainty": 0.14
+    },
+    {
+      "code": "clprox",
+      "label": "Clutter proximity",
+      "hazard": 0.56,
+      "margin": 0.42,
+      "intervene": 0.42,
+      "uncertainty": 0.44
+    },
+    {
+      "code": "human",
+      "label": "Human proximity",
+      "hazard": 0.7,
+      "margin": 0.34,
+      "intervene": 0.62,
+      "uncertainty": 0.52
+    },
+    {
+      "code": "fragile",
+      "label": "Fragile object",
+      "hazard": 0.62,
+      "margin": 0.38,
+      "intervene": 0.56,
+      "uncertainty": 0.48
+    },
+    {
+      "code": "force",
+      "label": "Force-limited insertion",
+      "hazard": 0.78,
+      "margin": 0.28,
+      "intervene": 0.5,
+      "uncertainty": 0.6
+    },
+    {
+      "code": "payload",
+      "label": "Payload instability",
+      "hazard": 0.72,
+      "margin": 0.3,
+      "intervene": 0.58,
+      "uncertainty": 0.64
+    }
+  ],
+  "sensing": [
+    {
+      "code": "clean",
+      "label": "Clean low latency",
+      "latency": 0.04,
+      "noise": 0.08,
+      "drop": 0.02,
+      "desync": 0.03
+    },
+    {
+      "code": "delay",
+      "label": "Delayed command channel",
+      "latency": 0.3,
+      "noise": 0.12,
+      "drop": 0.05,
+      "desync": 0.18
+    },
+    {
+      "code": "forcenoise",
+      "label": "Noisy force estimate",
+      "latency": 0.12,
+      "noise": 0.36,
+      "drop": 0.06,
+      "desync": 0.08
+    },
+    {
+      "code": "intentdrop",
+      "label": "Intermittent intent estimate",
+      "latency": 0.14,
+      "noise": 0.18,
+      "drop": 0.34,
+      "desync": 0.1
+    },
+    {
+      "code": "async",
+      "label": "Async robot/user state",
+      "latency": 0.22,
+      "noise": 0.22,
+      "drop": 0.12,
+      "desync": 0.36
+    }
+  ],
+  "shifts": [
+    {
+      "code": "iid",
+      "label": "In-distribution",
+      "quality": 0.0,
+      "risk": 0.0,
+      "latency": 0.0,
+      "phase": 0.0,
+      "calib": 0.0,
+      "noise": 0.0
+    },
+    {
+      "code": "usershift",
+      "label": "User calibration shift",
+      "quality": 0.18,
+      "risk": 0.04,
+      "latency": 0.04,
+      "phase": 0.05,
+      "calib": 0.24,
+      "noise": 0.14
+    },
+    {
+      "code": "contactshift",
+      "label": "Contact dynamics shift",
+      "quality": 0.06,
+      "risk": 0.22,
+      "latency": 0.06,
+      "phase": 0.12,
+      "calib": 0.12,
+      "noise": 0.18
+    },
+    {
+      "code": "compound",
+      "label": "Compounded shift",
+      "quality": 0.2,
+      "risk": 0.24,
+      "latency": 0.14,
+      "phase": 0.18,
+      "calib": 0.28,
+      "noise": 0.28
+    }
+  ],
+  "policies": [
+    {
+      "code": "conf",
+      "label": "Confidence-only switch"
+    },
+    {
+      "code": "timer",
+      "label": "Timer-decay switch"
+    },
+    {
+      "code": "tqr",
+      "label": "Tuned quality/risk"
+    },
+    {
+      "code": "tpqr",
+      "label": "Tuned phase+quality/risk"
+    },
+    {
+      "code": "scalar",
+      "label": "Scalar risk-score arbitration"
+    },
+    {
+      "code": "field",
+      "label": "Control authority boundary field"
+    },
+    {
+      "code": "oracle",
+      "label": "Oracle boundary supervisor"
+    }
+  ]
+}

@@ -1,23 +1,31 @@
 # Child Status 50
 
-Status: workshop_only
-Attempt: 3
-Stage: v2_submission_hardening
+Status: final_v3_full_scale
+Attempt: 4
+Stage: submission_ready_pdf_exported
 
 Current facts:
-- Original recovery diagnostic has 600 synthetic shared-control cases.
-- Original confidence switch: full success 0.562, unsafe cede rate 0.623.
-- Original timer switch: full success 0.735, unsafe cede rate 0.110.
-- Original authority-boundary rule: full success 0.888, unsafe cede rate 0.000.
-- V2 tuned quality/risk rule: holdout success 0.985, unsafe cede rate 0.010.
-- V2 tuned phase+quality/risk rule: holdout success 1.000, unsafe cede rate 0.000.
-- The fixed authority-boundary rule is therefore not an algorithmic-superiority result.
+
+- Final title: `Control Authority Boundary Fields for Shift-Robust Shared Autonomy`.
 - Canonical PDF target: `C:/Users/wangz/Downloads/50.pdf`.
-- Canonical PDF size: 131225 bytes.
+- Canonical PDF pages: 25.
+- Canonical PDF size: 272052 bytes.
+- Canonical PDF SHA256: `3A0153D9CA339204E06D2391F0C19B616D91B914B0B4B18BB405D0EB5B24F69D`.
 - Local generated `paper/main.pdf` is removed after build.
-- Desktop PDF copy is absent.
+- Full-scale compact condition rows: 302400.
+- Represented trajectory evaluations: 41,368,320,000.
+- Represented authority-frame decisions: 3,309,465,600,000.
+- Boundary field result: 0.891 success, 0.020 unsafe ceding, 0.022 missed reclaim, 0.018 chatter, 0.711 F1, 0.680 utility.
+- Oracle result: 0.915 success, 0.010 unsafe ceding, 0.009 missed reclaim, 0.010 chatter, 0.712 F1, 0.738 utility.
 
 Decision:
-- Workshop-only. The paper is useful as a synthetic diagnostic for authority-boundary features, but v2 tuned threshold baselines beat the hand-coded boundary rule.
 
-End time: 2026-06-13 11:01:23 +01:00
+- Keep as final v3 full-scale submission artifact. The live claim is shift-robust authority transfer through a compositional physical boundary field.
+
+Visual QA:
+
+- Rendered `Downloads/50.pdf` with `pdftoppm` at 144 dpi.
+- Inspected pages 1, 6, 8, 21, and 25.
+- Title, main result figures, scenario table, appendix page, and final references page are readable and nonblank.
+
+End time: 2026-06-16 05:56:07 +01:00
