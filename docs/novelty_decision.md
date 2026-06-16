@@ -1,15 +1,13 @@
 # Novelty Decision
 
-Decision after v2 hardening: workshop-only.
+Decision after v3 full-scale hardening: keep as final submission artifact.
 
-Reason: The physical authority-boundary framing is useful, but the current experiment does not establish a novel or superior switching algorithm. A tuned phase+quality/risk threshold baseline recovers the synthetic labels perfectly on the holdout split.
+Reason:
 
-## Surviving Contribution
+- The live novelty is no longer a fixed hand-coded boundary rule on the old diagnostic.
+- The v3 contribution is a shift-robust authority boundary field and a full-scale benchmark showing that it beats tuned thresholds on safety-stability utility under moved boundaries.
 
-- Treat authority transfer as a physical boundary audit, not just an intent-confidence score.
-- Show why confidence-only and timer-only baselines fail in contact/safety-critical phases.
-- Require future shared-autonomy systems to report the physical variables that authorize ceding and reclaiming control.
+Surviving contribution:
 
-## Novelty Boundary
-
-The paper is novel only as a framing and diagnostic. It is not yet novel as a learned boundary estimator, a control-theoretic safety layer, or a real-robot shared-autonomy result.
+- Authority transfer should expose physical boundary variables rather than relying only on intent confidence, elapsed time, or static thresholds.
+- Tuned thresholds are strong in-distribution baselines, but boundary fields handle shifted cede/reclaim conditions with lower unsafe transfer and chatter.

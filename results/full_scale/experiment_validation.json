@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "expected_condition_rows": 302400,
+  "actual_condition_rows": 302400,
+  "represented_trajectory_evaluations": 41368320000,
+  "represented_frame_decisions": 3309465600000,
+  "evals_per_condition_row": 136800,
+  "frames_per_condition_row": 10944000,
+  "figures": [
+    "policy_success_safety.pdf",
+    "shift_robustness_curve.pdf",
+    "chatter_utility_tradeoff.pdf",
+    "scenario_utility.pdf"
+  ],
+  "tables": [
+    "table_scale.tex",
+    "table_main_performance.tex",
+    "table_shift_stress.tex",
+    "table_scenario_boundary.tex",
+    "table_robot_platform.tex",
+    "table_user_regime.tex"
+  ]
+}

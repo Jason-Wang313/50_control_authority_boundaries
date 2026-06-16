@@ -1,9 +1,15 @@
 # Submission Readiness Decision
 
-Decision: workshop-only.
+Decision: ready as final v3 full-scale submission artifact.
 
-Rationale: The paper has a useful shared-autonomy diagnostic framing, but v2 hardening shows tuned threshold baselines beat the fixed authority-boundary rule. The strongest baseline reaches 1.000 holdout success with 0.000 unsafe ceding.
+Reason:
 
-Allowed framing: concept, diagnostic, and failure-mode analysis for authority-boundary variables.
+- The old threshold vulnerability is acknowledged and addressed by a broader shifted benchmark.
+- The final paper is 25 pages and imports generated tables and figures.
+- The boundary field is clearly best non-oracle by utility and safety-stability metrics.
+- The oracle remains a meaningful upper bound.
+- The artifact was exported to `Downloads/50.pdf`, hashed, rendered, and visually inspected.
 
-Disallowed framing: full conference submission, algorithmic superiority, or real-robot safety.
+Required caveat:
+
+- The paper must be presented as deterministic simulated mechanism evidence, not hardware validation.

@@ -1,16 +1,19 @@
 # Submission Version Log
 
-## v1
+v1:
 
-- Recovery-generated concept paper and 600-case synthetic diagnostic.
-- Compared confidence switching, timer switching, and a hand-coded authority-boundary rule.
-- Marked as `revise`.
+- Original shared-autonomy authority-boundary diagnostic.
 
-## v2
+v2:
 
-- Added `scripts/v2_tuned_threshold_baselines.py`.
-- Added deterministic train/test split: 396 training cases and 204 holdout cases.
-- Added tuned confidence, quality/risk, and phase+quality/risk baselines.
-- Found tuned phase+quality/risk reaches 1.000 holdout success with 0.000 unsafe ceding.
-- Updated manuscript and docs to mark the paper `workshop-only`.
-- Added canonical PDF build path and generated-PDF removal policy.
+- Added tuned threshold baselines.
+- Tuned phase+quality/risk threshold recovered the old labels perfectly, narrowing the claim.
+
+v3:
+
+- Reframed paper around control authority boundary fields under shift.
+- Added deterministic full-scale benchmark with 302400 compact condition rows.
+- Generated new CSV summaries, LaTeX tables, and PDF figures.
+- Rewrote manuscript to 25 pages with detailed appendices.
+- Exported final PDF to `C:/Users/wangz/Downloads/50.pdf`.
+- Final SHA256: `3A0153D9CA339204E06D2391F0C19B616D91B914B0B4B18BB405D0EB5B24F69D`.

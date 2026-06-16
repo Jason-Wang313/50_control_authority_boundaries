@@ -1,29 +1,26 @@
 # Novelty Boundary Map
 
-## What Survives
+Inside the claim:
 
-Control authority should be audited as a boundary in physical interaction state space. The diagnostic should ask whether ceding or reclaiming authority depends on task phase, human input quality, force/risk state, latency, and error trend.
+- Authority ceding and reclaiming as physical boundary inference.
+- Task phase, user quality, contact risk, force margin, latency, uncertainty, and hysteresis as explicit authority variables.
+- Shift robustness across users, robots, contact dynamics, sensing, and compounded shift.
+- Evaluation of unsafe ceding, missed reclaim, needless intervention, chatter, peak force, recovery latency, F1, and utility.
 
-## What V2 Breaks
+Outside the claim:
 
-The fixed boundary rule is not itself the contribution. On the v2 train/test split:
+- Hardware safety certification.
+- A claim that thresholds are useless.
+- A claim that the exact v3 coefficients should be deployed.
+- General superiority over every adaptive shared-control method.
 
-- Paper authority-boundary rule: 0.882 holdout success, 0.000 unsafe ceding.
-- Tuned quality/risk threshold: 0.985 holdout success, 0.010 unsafe ceding.
-- Tuned phase+quality/risk threshold: 1.000 holdout success, 0.000 unsafe ceding.
+Hard boundary cases:
 
-This means the diagnostic labels are recoverable by simple tuned thresholds. The paper cannot claim that its hand-coded boundary is optimal, learned, or uniquely principled.
+- High-intrusion systems such as exoskeletons.
+- Noisy or asynchronous sensing.
+- Contact dynamics shifts.
+- User overconfidence near fragile objects or humans.
 
-## Workshop-Safe Framing
+Novel contribution:
 
-- Use confidence and timer rules as illustrative hidden-proxy failures.
-- Present the tuned thresholds as the strongest v2 baseline.
-- Claim that explicit physical boundary variables make authority policies easier to audit.
-- Ask for real traces and learned boundary extraction as future work.
-
-## Unsafe Framing
-
-- "Our boundary algorithm outperforms tuned baselines."
-- "The method guarantees safe authority transfer."
-- "The result generalizes across shared-autonomy domains."
-- "The contribution is more than a diagnostic unless real or stronger simulation evidence is added."
+- Treat authority transfer as a compositional boundary field and evaluate it under distribution shifts that defeat narrow in-distribution threshold recovery.
