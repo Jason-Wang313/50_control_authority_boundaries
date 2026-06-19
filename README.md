@@ -10,8 +10,9 @@ Canonical PDF:
 
 - `C:/Users/wangz/Downloads/50.pdf`
 - Pages: 25
-- Size: 272052 bytes
-- SHA256: `3A0153D9CA339204E06D2391F0C19B616D91B914B0B4B18BB405D0EB5B24F69D`
+- Size: 271978 bytes
+- SHA256: `DF6DDC58EC593228073AEB34577565AE7E38C306A5CE599F3B9C8F099E17039F`
+- VLA-style highlight hardening: 8 green link boxes and 9 red link boxes on pages 3, 4, 6, 7, and 8, all with border `(0, 0, 1)`.
 
 Full-scale experiment:
 

@@ -29,15 +29,17 @@ Artifact:
 
 - Canonical PDF: `C:/Users/wangz/Downloads/50.pdf`.
 - Pages: 25.
-- Size: 272052 bytes.
-- SHA256: `3A0153D9CA339204E06D2391F0C19B616D91B914B0B4B18BB405D0EB5B24F69D`.
+- Size: 271978 bytes.
+- SHA256: `DF6DDC58EC593228073AEB34577565AE7E38C306A5CE599F3B9C8F099E17039F`.
 - Local `paper/main.pdf` removed after export.
 
 Visual QA:
 
 - Rendered at 144 dpi with `pdftoppm`.
 - Inspected pages 1, 6, 8, 21, and 25.
-- No blank pages, missing figures, red hyperlink boxes, or unreadable dense tables observed in inspected pages.
+- VLA-style highlight hardening: 8 green link boxes and 9 red link boxes on pages 3, 4, 6, 7, and 8, all with border `(0, 0, 1)`.
+- VLA link-box visual QA pages: 3, 4, 6, 7, and 8.
+- No blank pages, missing figures, or unreadable dense tables observed in inspected pages; VLA-style link boxes are intentionally visible on the verified pages.
 
 Residual risk:
 
