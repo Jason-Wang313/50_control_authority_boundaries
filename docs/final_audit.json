@@ -3,10 +3,17 @@
   "decision": "final_v3_full_scale",
   "canonical_pdf": "C:/Users/wangz/Downloads/50.pdf",
   "pages": 25,
-  "file_size_bytes": 272052,
-  "sha256": "3A0153D9CA339204E06D2391F0C19B616D91B914B0B4B18BB405D0EB5B24F69D",
+  "file_size_bytes": 271978,
+  "sha256": "DF6DDC58EC593228073AEB34577565AE7E38C306A5CE599F3B9C8F099E17039F",
   "compact_condition_rows": 302400,
   "represented_trajectory_evaluations": 41368320000,
   "represented_frame_decisions": 3309465600000,
-  "visual_qa": "pass"
+  "visual_qa": "pass",
+  "vla_highlight_hardening": {
+    "link_pages": [3, 4, 6, 7, 8],
+    "green_link_boxes": 8,
+    "red_link_boxes": 9,
+    "border": [0, 0, 1],
+    "visual_qa_pages": [3, 4, 6, 7, 8]
+  }
 }

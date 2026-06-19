@@ -16,11 +16,12 @@ Expected PDF artifact:
 
 - Path: `C:/Users/wangz/Downloads/50.pdf`.
 - Pages: 25.
-- SHA256: `3A0153D9CA339204E06D2391F0C19B616D91B914B0B4B18BB405D0EB5B24F69D`.
+- SHA256: `DF6DDC58EC593228073AEB34577565AE7E38C306A5CE599F3B9C8F099E17039F`.
 - Local `paper/main.pdf`: absent after build.
 
 Visual QA:
 
 - Render PDF pages with `pdftoppm -png -r 144`.
 - Inspect title page, main result figure page, dense table page, appendix page, and final references page.
+- VLA-style highlight hardening: 8 green link boxes and 9 red link boxes on pages 3, 4, 6, 7, and 8, all with border `(0, 0, 1)`.
 - Confirm generated figures are nonblank and table text fits.
